@@ -1,0 +1,17 @@
+filename,num_windows,label_distribution
+aceleracaoLinear_terra.csv,257,{np.int64(0): np.int64(257)}
+acelerometro_terra.csv,257,{np.int64(0): np.int64(257)}
+campoMagnetico_terra.csv,514,{np.int64(0): np.int64(514)}
+giroscopio_terra.csv,257,{np.int64(0): np.int64(257)}
+aceleracaoLinear_terra.csv,81,{np.int64(0): np.int64(81)}
+acelerometro_terra.csv,81,{np.int64(0): np.int64(81)}
+campoMagnetico_terra.csv,164,{np.int64(0): np.int64(164)}
+giroscopio_terra.csv,81,{np.int64(0): np.int64(81)}
+aceleracaoLinear_terra.csv,119,{np.int64(0): np.int64(119)}
+acelerometro_terra.csv,119,{np.int64(0): np.int64(119)}
+campoMagnetico_terra.csv,238,{np.int64(0): np.int64(238)}
+giroscopio_terra.csv,119,{np.int64(0): np.int64(119)}
+aceleracaoLinear_terra.csv,163,{np.int64(0): np.int64(163)}
+acelerometro_terra.csv,163,{np.int64(0): np.int64(163)}
+campoMagnetico_terra.csv,328,{np.int64(0): np.int64(328)}
+giroscopio_terra.csv,163,{np.int64(0): np.int64(163)}
