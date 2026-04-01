@@ -1,0 +1,41 @@
+# Intelligent Driver Behavior Sensing (IDBS) System Architecture
+
+## Model Architecture Overview
+
+The IDBS system employs a multimodal fusion architecture that combines temporal sensor data processing with cross-modal attention mechanisms for comprehensive driver behavior analysis.
+
+### Core Components
+
+#### 1. Temporal Convolutional Network (TCN)
+- **Purpose**: Processes time-series sensor data (e.g., accelerometer, gyroscope, physiological signals)
+- **Architecture**: Dilated causal convolutions with residual connections
+- **Features**: 
+  - Captures long-range temporal dependencies
+  - Maintains temporal causality
+  - Efficient parallel computation
+  - Variable sequence length support
+
+#### 2. Cross-Modal Attention Module
+- **Purpose**: Fuses information from multiple sensor modalities
+- **Architecture**: Bidirectional cross-attention mechanism
+- **Features**:
+  - Learns inter-modal relationships
+  - Adaptive feature weighting
+  - Preserves modality-specific information
+  - Enables interpretable attention patterns
+
+#### 3. Multimodal Fusion Strategy
+- **Input**: Multiple sensor modality tensors processed by TCN
+- **Processing**: Cross-attention computes modality interactions
+- **Output**: Fused representation for downstream classification/regression
+
+### Data Flow
+1. Raw sensor data → TCN (per modality) → Temporal features
+2. Temporal features → Cross-attention → Fused representation
+3. Fused representation → Task-specific layers → Predictions
+
+### Key Design Principles
+- **Modularity**: Separate processing for each modality
+- **Scalability**: Support for variable number of sensor modalities
+- **Interpretability**: Attention weights provide insight into modality importance
+- **Efficiency**: Parallel processing and optimized convolution operations
